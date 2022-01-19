@@ -1,19 +1,30 @@
-import {Link,withRouter} from 'react-router-dom';
-const Navigation = (props) => {
-    return ( 
-        <header>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
+import { NavLink, withRouter } from "react-router-dom";
+import styles from './navigation.module.css'
+const items = [
+  { name: "پروفایل", link: "/profile" },
+  { name: "درباره ما", link: "/about-us" },
+  { name: "خانه", link: "/", exact: true },
+];
+const Navigation = () => {
+  return (
+    <nav className={styles.navbarContainer}>
+      <ul className={styles.navbarul}>
+        {items.map((item) => {
+          return (
+            <li className={styles.navbarli} key={item.link}>
+              <NavLink
+                to={item.link}
+                activeClassName={styles.activeLink}
+                exact={item.exact || false}
+              >
+                {item.name}
+              </NavLink>
             </li>
-            <li>
-              <Link to="/about-us">About Us</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-     );
-}
- 
+          );
+        })}
+      </ul>
+    </nav>
+  );
+};
+
 export default withRouter(Navigation);
