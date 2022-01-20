@@ -1,6 +1,7 @@
 import { NavLink, withRouter } from "react-router-dom";
 import styles from './navigation.module.css'
 const items = [
+  {name: "بلاگ" , link: '/blogs'},
   { name: "پروفایل", link: "/profile" },
   { name: "درباره ما", link: "/about-us" },
   { name: "خانه", link: "/", exact: true },

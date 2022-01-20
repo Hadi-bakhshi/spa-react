@@ -1,16 +1,16 @@
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "./App.css";
-import HomePage from "./pages/HomePage";
-import AboutUsPage from "./pages/AboutUsPage";
-import Profile from "./pages/Profile";
 import Layout from "./Layout/Layout";
+import routes from "./routes";
 
 function App() {
   return (
     <Layout>
-      <Route path="/" exact={true} component={HomePage} />
-      <Route path="/about-us" component={AboutUsPage} />
-      <Route path="/profile" component={Profile} />
+      <Switch>
+        {routes.map((route) => (
+          <Route {...route} />
+        ))}
+      </Switch>
     </Layout>
   );
 }
