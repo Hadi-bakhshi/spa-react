@@ -13,7 +13,7 @@ const Blog = () => {
       {items.map((item) => {
         return (
           <span key={item.link}>
-            <Link to={item.link}>{item.name}</Link>
+            <Link to={{pathname:item.link, search:'sort=name'}}>{item.name}</Link>
           </span>
         );
       })}
