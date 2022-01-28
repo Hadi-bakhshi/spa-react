@@ -1,2 +1,12 @@
+.aside {
 
-
+  background-color: #efefef;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  color: aqua;
+}
+.aside a {
+  margin: 20px;
+}
