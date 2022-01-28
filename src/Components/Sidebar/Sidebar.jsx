@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <aside>
+    <aside className="sidebarAside">
       <ul className="aside">
         <li>
-          <Link to="/profile/dashboard">داشبورد</Link>
+          <NavLink to="/profile/dashboard" activeClassName="activeTab">داشبورد</NavLink>
         </li>
         <li>
-          <Link to="/profile/downloads">دانلودها</Link>
+          <NavLink to="/profile/downloads" activeClassName="activeTab">دانلودها</NavLink>
         </li>
       </ul>
     </aside>

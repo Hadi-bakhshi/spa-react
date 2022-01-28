@@ -5,12 +5,14 @@ import { Downloads } from "../Components/Download/Downloads";
 
 const Profile = () => {
   return (
-    <>
+    <div>
       <p>هادی عزیز خوش آمدی </p>
-      <Sidebar />
-      <Route path="/profile/dashboard" component={Dashboard} />
-      <Route path="/profile/downloads" component={Downloads}/>
-    </>
+      <div className="sidebarContainer">
+        <Route path="/profile/dashboard" component={Dashboard} />
+        <Route path="/profile/downloads" component={Downloads} />
+        <Sidebar />
+      </div>
+    </div>
   );
 };
 

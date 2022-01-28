@@ -1,12 +1,20 @@
-.aside {
-
+.sidebarAside{
   background-color: #efefef;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: right;
-  color: aqua;
+  flex: 1;
+  border-radius: 10px;
 }
 .aside a {
-  margin: 20px;
+  margin: 25px;
+}
+.sidebarContainer{
+  display: flex;
+}
+.dashboardContainer{
+  flex: 2;
+}
+.downloadContainer{
+  flex: 2;
+}
+.activeTab{
+  color: rgb(3, 175, 124);
 }
