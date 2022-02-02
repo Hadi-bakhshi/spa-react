@@ -1,4 +1,20 @@
-.App {
-  text-align: center;
+.sidebarAside{
+  background-color: #efefef;
+  flex: 1;
+  border-radius: 10px;
 }
-
+.aside a {
+  margin: 25px;
+}
+.sidebarContainer{
+  display: flex;
+}
+.dashboardContainer{
+  flex: 2;
+}
+.downloadContainer{
+  flex: 2;
+}
+.activeTab{
+  color: rgb(3, 175, 124);
+}

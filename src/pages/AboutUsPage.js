@@ -1,10 +1,5 @@
 const AboutUsPage = (props) => {
-  return (
-    <>
-      <p>درباره ما</p>
-      <a href="/">برگشت به صفحه خانه</a>
-    </>
-  );
+  return <p>درباره ما</p>;
 };
 
 export default AboutUsPage;
