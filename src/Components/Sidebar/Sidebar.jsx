@@ -5,10 +5,20 @@ const Sidebar = () => {
     <aside className="sidebarAside">
       <ul className="aside">
         <li>
-          <NavLink to="/profile/dashboard" activeClassName="activeTab">داشبورد</NavLink>
+          <NavLink
+            to="/profile/dashboard"
+            className={(navData) => (navData.isActive ? "activeTab" : "")}
+          >
+            داشبورد
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/profile/downloads" activeClassName="activeTab">دانلودها</NavLink>
+          <NavLink
+            to="/profile/downloads"
+            className={(navData) => (navData.isActive ? "activeTab" : "")}
+          >
+            دانلودها
+          </NavLink>
         </li>
       </ul>
     </aside>
