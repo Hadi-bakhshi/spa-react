@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Layout from "./Layout/Layout";
 import routes from "./routes";
@@ -6,11 +6,11 @@ import routes from "./routes";
 function App() {
   return (
     <Layout>
-      <Switch>
+      <Routes>
         {routes.map((route) => (
           <Route {...route} />
         ))}
-      </Switch>
+      </Routes>
     </Layout>
   );
 }
